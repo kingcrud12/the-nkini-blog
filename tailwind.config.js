@@ -8,10 +8,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "banner": "url('../public/assets/banner.jpg')",
       },
+      colors: {
+        hoverColor: "#ffaa17",
+        darkRed: "#ea0638",
+      },
+      padding : {
+        "bt-10": "100%",
+      },
+
+      margin:{
+        "diet":"100%",
+      },
+
     },
   },
   plugins: [],
