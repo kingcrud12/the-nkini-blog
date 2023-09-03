@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-screen-2xl h-full mx-auto px-4 flex items-center justify-between">
         <Link href="/"><h1 className="text-2xl uppercase font-bold">The nkini project</h1></Link>
         <ul className="list">
-          <li className="navbarLi">Accueil</li>
+        <Link href="/accueil"><li className="navbarLi">Accueil</li></Link>
           <li className="navbarLi">Arts</li>
           <li className="navbarLi">Musique</li>
           <li className="navbarLi">Cinema</li>
