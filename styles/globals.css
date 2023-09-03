@@ -6,4 +6,10 @@
   .navbarLi {
     @apply hover:text-hoverColor cursor-pointer duration-300;
   }
+  
+  @layer components {
+    .list {
+      @apply hidden lg:inline-flex items-center gap-8 uppercase text-sm font-semibold;
+    }
+  }
 }

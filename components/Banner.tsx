@@ -14,7 +14,7 @@ const Banner = () => {
     delaySpeed: 2000,
   });
   return (
-    <div className="h-96 max-w-screen-2xl mx-auto flex flex-col justify-center items-center">
+    <div className="max-w-screen-2xl mx-auto flex flex-col justify-center items-center mt-20 pb-96 bg-fixed bg-no-repeat bg-cover">
       <h1 className="text-2xl md:text-4xl uppercase font-bold">
         See beyond appearances
       </h1>

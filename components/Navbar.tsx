@@ -1,15 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import { BsSearch } from "react-icons/bs";
 import { ImCart } from "react-icons/im";
 import { FiMenu } from "react-icons/fi";
+import Link from "next/link";
+
+
 
 const Navbar = () => {
+
   return (
     <div className="w-full h-20 lg:h-28 border-b-[1px] border-gray-500 text-black lg:text-white bg-white lg:bg-transparent">
       <div className="max-w-screen-2xl h-full mx-auto px-4 flex items-center justify-between">
-        <h1 className="text-2xl uppercase font-bold">The nkini project</h1>
-        <ul className="hidden lg:inline-flex items-center gap-8 uppercase text-sm font-semibold">
-          <li className="navbarLi">Accueil</li>
+        <Link href="/"><h1 className="text-2xl uppercase font-bold">The nkini project</h1></Link>
+        <ul className="list">
+          <Link href="/accueil"><li className="navbarLi">Accueil</li></Link>
           <li className="navbarLi">Arts</li>
           <li className="navbarLi">Musique</li>
           <li className="navbarLi">Cinema</li>
@@ -28,9 +32,9 @@ const Navbar = () => {
             Voir votre panier
           </button>
         </div>
-        <div className="inline-flex lg:hidden">
+        <button><div className="inline-flex lg:hidden">
           <FiMenu className="text-3xl" />
-        </div>
+        </div></button>
       </div>
     </div>
   );
