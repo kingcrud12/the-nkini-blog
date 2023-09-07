@@ -1,6 +1,7 @@
 import React from "react";
 import "@/styles/style.css"
 import LoickM from "../../public/assets/loickM.jpg"
+import Interview from "../../public/assets/Interview.png"
 import Image from "next/image"
 
 export const Articles_arts = () => {
@@ -9,11 +10,7 @@ export const Articles_arts = () => {
       <div className="div-yui">
         <div className="figure">
           <div className="figcaption">
-            <img
-              className="div-image-card"
-              alt="Div image card"
-              src="https://c.animaapp.com/9kSRVZKN/img/div-image-card.png"
-            />
+            <Image src={Interview} alt="Interview image" />
           </div>
           <div className="div-yui-wrapper">
             <Image  src={LoickM} alt="image for a post"/>
