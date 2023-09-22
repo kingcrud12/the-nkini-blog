@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: column;
     padding: 60px 50.5px;
-    position: relative;
-    width: 1906px;
   }
   
   .main .div-yui {

@@ -2,13 +2,12 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import "@/styles/globals.css";
 import { Articles_arts } from '../components/Articles_arts';
+import PageNav from '../components/PageNav';
 
 const Page = () => {
   return (
     <div className="w-full">
-      <header className="w-full h-20 lg:h-28 border-b-[1px] bg-black border-gray-500 text-black">
-        <Navbar />
-      </header>
+      <PageNav />
       <Articles_arts />
     </div>
   )
