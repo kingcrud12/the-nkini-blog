@@ -9,8 +9,8 @@ const Articles_arts_little_sreen = () => {
       <div className="flex flex-col max-w-[376px] w-[336px] items-start relative flex-[0_0_auto]">
         <div className="relative self-stretch w-full h-[8777.58px]">
           <div className="h-[549px] top-[17px] absolute w-[302px] left-[17px]">
-            <div className="relative h-[549px]">
-                <Image  src={LoickM} alt="image for a post"/>
+            <div className="relative h-[549px] ml-[50px]">
+                <Image  src={LoickM} alt="image for a post" className='left-[-20px] absolute w-[268px] top-0 object-cover' />
               <div className="h-[374px] top-[175px] left-0 absolute w-[268px] bg-[#cec0c2]">
                 <div className="absolute w-[208px] h-[116px] top-[30px] left-[30px]">
                   <div className="absolute h-[15px] top-[6px] left-[-3px] [font-family:'Inter',Helvetica] font-light text-white text-[29px] text-center">

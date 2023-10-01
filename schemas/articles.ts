@@ -1,7 +1,7 @@
 import { BiPackage } from "react-icons/bi";
 import { defineField } from "sanity";
 
-const project = {
+const articles = {
   name: "articles",
   title: "articles",
   description: "posts Schema",
@@ -31,12 +31,12 @@ const project = {
     }),
     {
       name: "logo",
-      title: "Project Logo",
+      title: "post Logo",
       type: "image",
     },
     {
-      name: "projectUrl",
-      title: "Project URL",
+      name: "postURL",
+      title: "post URL",
       type: "url",
     },
     {
@@ -63,4 +63,4 @@ const project = {
   ],
 };
 
-export default project;
+export default articles;

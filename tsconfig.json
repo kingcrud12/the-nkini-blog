@@ -34,7 +34,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
-, "app/screens/page.jsx"  ],
+, "app/screens/page.jsx", "app/components/Articles_arts.jsx"  ],
   "exclude": [
     "node_modules"
   ]

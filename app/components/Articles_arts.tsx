@@ -1,9 +1,11 @@
 import React from "react";
-import "@/styles/style.css"
 import LoickM from "../../public/assets/loickM.jpg"
 import Image from "next/image"
+import {getArticles} from "@/sanity/sanity.query"
+import type { articlesType } from "@/types";
+import Link from "next/link"
 
-export const Articles_arts = () => {
+export default function Articles_arts () {
   return (
     <div className="inline-flex flex-col items-center pl-[30.5px] pr-[64.5px] py-[60px] relative bg-white">
       <div className="flex flex-col max-w-[1426px] w-[1331px] items-start relative flex-[0_0_auto]">
@@ -13,9 +15,9 @@ export const Articles_arts = () => {
               <div className="h-[644.67px] relative w-[598.94px] bg-[#cec0c2]">
                 <div className="absolute w-[466px] h-[223px] top-[67px] left-[67px]">
                   <div className="absolute h-[28px] top-[12px] left-[27px] [font-family:'Inter',Helvetica] font-light text-white text-[55.8px] text-center tracking-[0] leading-[27.9px] whitespace-nowrap">
-                    Interview avec
+                    Interview
                   </div>
-                  <div className="absolute h-[28px] top-[68px] left-[125px] [font-family:'Inter',Helvetica] font-light text-white text-[55.8px] text-center tracking-[0] leading-[27.9px] whitespace-nowrap">
+                  <div className="absolute h-[28px] top-[68px] left-[125px] [font-family:'Inter',Helvetica] font-light text-white text-[55.8px] text-center items-center tracking-[0] leading-[27.9px] whitespace-nowrap">
                     Loick
                   </div>
                   <div className="absolute w-[465px] h-[112px] top-[110px] left-0 mt-[30px]">

@@ -1,8 +1,7 @@
 "use client"
-
 import Navbar from '../components/Navbar'
 import "@/styles/globals.css";
-import { Articles_arts } from '../components/Articles_arts';
+import Articles_arts from '../components/Articles_arts';
 import PageNav from '../components/PageNav';
 import React, {useEffect, useState} from 'react';
 import Articles_arts_little_sreen from '../components/Articles_arts_little_sreen';
