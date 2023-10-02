@@ -1,15 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import TheNkniLogo from "./the_nkini_logo_D.png"
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from "./pages/home/Home"
+import Arts from "./pages/arts/Arts"
+import About from "./pages/about/About"
+import Cinema from "./pages/cinema/Cinema"
+import Music from "./pages/music/Music"
+import Portfolio from "./pages/portfolio/Portfolio"
 
 function App() {
   return (
-    <div className="App">
-      <div className="App-logo">
-        <img src={TheNkniLogo} className="App-logo" alt="logo" />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/arts' element={<Arts />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/cinema' element={<Cinema />} />
+        <Route path='/music' element={<Music />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
