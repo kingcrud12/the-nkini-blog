@@ -1,7 +1,7 @@
 import React from "react";
 import "@/styles/style.css"
-import LoickM from "../../public/assets/loickM.jpg"
 import Image from "next/image"
+const LoickM = require("@/app/public/assets/loickM.jpg")
 
 export const Articles_arts = () => {
   return (
