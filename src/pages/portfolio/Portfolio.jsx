@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from '../../components/navbar/Navbar'
 
 const Portfolio = () => {
   return (
     <div>
-      Portfolio
+      <Navbar type={"Page"} />
     </div>
   )
 }

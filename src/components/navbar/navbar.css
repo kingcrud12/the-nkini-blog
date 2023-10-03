@@ -1,0 +1,113 @@
+
+.navBar{
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+    border-bottom-width: 1px;
+    border-color: gray;
+}
+
+.PageNav{
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+    border-bottom-width: 1px;
+    border-color: gray;
+}
+
+@media (max-width: 768px) {
+   .PageNav .search,
+   .PageNav .navContainer>ul{
+    display: none;
+   }
+
+   .PageNav .little_menu{
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.PageNav .Title{
+    margin-left: 10px;
+}
+
+}
+
+
+
+@media (max-width: 768px) {
+    .navBar {
+        background-color: white;
+        color: black; /* Couleur du texte sur fond blanc */
+    }
+
+   .navBar .search,
+   .navBar .navContainer>ul{
+    display: none;
+   }
+
+   .navBar .little_menu{
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+.navBar .Title{
+    margin-left: 10px;
+}
+
+}
+
+.navContainer{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Title{
+    font-weight: bold;
+    font-size: 20px;
+    justify-self: start;
+    cursor: pointer;
+
+}
+
+.navContainer>ul{
+    display: flex;
+    gap: 30px;
+}
+
+.navContainer>span{
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+span:hover{
+    color: #ffaa17;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.search{
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+
+
+.searchIcon:hover{
+    color: #ffaa17;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.little_menu{
+    display: none;
+}
